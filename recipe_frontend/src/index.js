@@ -3,10 +3,27 @@ import {createRoot} from "react-dom/client";
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
-import App from "./routes/App";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import ErrorPage from "./routes/error-page";
+import App from "./components/App";
+import Recipes from "./routes/Recipes";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <App />,
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                path:"recipes/",
+                element: <Recipes />
+            },
+        ]
+    },
+]);
 
 const root = createRoot(document.getElementById("root"))
 
 root.render(
-    <App />
+    <RouterProvider router={router} />
 )

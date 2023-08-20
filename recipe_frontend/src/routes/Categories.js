@@ -1,5 +1,8 @@
 import React from "react";
 import axios from 'axios';
+import CategoriesInfo from "../components/CategoriesInfo";
+import categoriesInfo from "../components/CategoriesInfo";
+import {Link} from "react-router-dom";
 
 class Categories extends React.Component {
     state = {
@@ -23,16 +26,18 @@ class Categories extends React.Component {
 
     render(){
         return(
-            <div>
-                <div>
-                    <a>All recipies</a>
-                </div>
-                {this.state.categories.map(category => (
-                    <div key={category.id}>
-                        <a>{category.name}</a>
-                    </div>
-                ))}
-            </div>
+            <>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to={`recipes/`}>All Recipes</Link>
+                        </li>
+                    </ul>
+
+                </nav>
+                <CategoriesInfo categories={this.state.categories}/>
+
+            </>
         )
     }
 
