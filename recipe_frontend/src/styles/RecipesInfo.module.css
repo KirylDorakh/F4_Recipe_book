@@ -1,3 +1,21 @@
 .recipes{
     display:flex;
+    flex-direction: column;
 }
+
+.recipes h1 span{
+    color: #328c67;
+}
+
+.recipes ol a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.recipes ol a:hover {
+    color: #328c67;
+    border-bottom: 2px solid #328c67;
+}
+

@@ -17,7 +17,7 @@ const App = () => {
                             <Link to={`/`}>Recipe Categories</Link>
                         </li>
                         <li>
-                            <Link to={`recipes/`}>All Recipes</Link>
+                            <Link to={`/recipes`}>All Recipes</Link>
                         </li>
                     </ul>
                 </nav>

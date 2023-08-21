@@ -1,0 +1,29 @@
+.recipe{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+.recipe h1{
+    color: #328c67;
+}
+
+.recipe button{
+    background: linear-gradient(135deg, #dcdcdc 0%, #b7b7b7 100%);
+    border-radius: 8px;
+    width: 260px;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;;
+    color: #191411;
+}
+
+.recipe button:hover{
+    background: #328c67;
+}
