@@ -3,3 +3,57 @@ html, body{
     padding: 0;
 }
 
+header{
+    background-color: #191411;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-name{
+    margin-left: 100px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 80px;
+    letter-spacing: 0.03em;
+}
+
+header nav{
+    margin-right: 100px;
+
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    margin: 0 auto;
+
+}
+
+.nav-list a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-list a:hover {
+    color: #328c67;
+    border-bottom: 2px solid #328c67;
+}
+
+main{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+

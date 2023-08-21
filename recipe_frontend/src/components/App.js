@@ -8,14 +8,17 @@ const App = () => {
     return (
         <>
             <header>
-                {/* other elements */}
-
+                <div className="app-name">
+                    Recipies App
+                </div>
                 <nav>
-                    <ul>
+                    <ul className="nav-list">
+                        <li>
+                            <Link to={`/`}>Recipe Categories</Link>
+                        </li>
                         <li>
                             <Link to={`recipes/`}>All Recipes</Link>
                         </li>
-
                     </ul>
                 </nav>
             </header>

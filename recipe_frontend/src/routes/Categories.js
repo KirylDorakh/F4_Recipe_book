@@ -1,8 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import CategoriesInfo from "../components/CategoriesInfo";
-import categoriesInfo from "../components/CategoriesInfo";
-import {Link} from "react-router-dom";
+
 
 class Categories extends React.Component {
     state = {
@@ -27,16 +26,7 @@ class Categories extends React.Component {
     render(){
         return(
             <>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to={`recipes/`}>All Recipes</Link>
-                        </li>
-                    </ul>
-
-                </nav>
                 <CategoriesInfo categories={this.state.categories}/>
-
             </>
         )
     }
