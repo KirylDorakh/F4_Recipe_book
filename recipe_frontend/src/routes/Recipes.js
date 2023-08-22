@@ -25,7 +25,6 @@ class Recipes extends Component{
     }
 
     getRecipes(){
-        console.log(';get Recipes')
         const searchCategory= window.location.search
         const category = new URLSearchParams(searchCategory).get("name")
 

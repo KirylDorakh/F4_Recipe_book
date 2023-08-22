@@ -11,6 +11,8 @@ import Recipes from "./routes/Recipes";
 import Recipe from "./routes/Recipe";
 import Categories from "./routes/Categories";
 
+import SwaggerRecipes from "./routes/SwaggerRecipes";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
                 element: <Recipe />
             },
         ]
+    },
+    {
+        path: "/swagger",
+        element: <SwaggerRecipes />
     },
 ]);
 
