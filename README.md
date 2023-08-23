@@ -1,6 +1,6 @@
 # F4_Recipe_book
 # **Запуск проекта**
-1. Скачать проект: ё
+1. Скачать проект:
 
    `git clone 'https://github.com/KirylDorakh/F4_Recipe_book.git'`
 2. Перейти в папку с проектом Django:
